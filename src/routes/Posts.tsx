@@ -7,6 +7,8 @@ import { getPosts } from '../shared/environment';
 
 function Posts() {
   const posts = useLoaderData() as PostItem[];
+  console.log(posts);
+
   const postsListElement = useMemo(() => <PostsList posts={posts} />, [posts]);
 
   return (

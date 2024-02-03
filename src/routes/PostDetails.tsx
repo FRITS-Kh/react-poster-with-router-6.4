@@ -72,6 +72,6 @@ export async function action({
 
 export async function loader({
   params,
-}: LoaderFunctionArgs): Promise<PostItem> {
+}: LoaderFunctionArgs): Promise<PostItem | string> {
   return (await getPost(params.postId as string)) ?? params.postId;
 }
