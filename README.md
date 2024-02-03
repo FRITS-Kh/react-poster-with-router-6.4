@@ -1,4 +1,6 @@
-# React + TypeScript + Vite
+# React poster on React + TypeScript + Vite
+
+[Live demo.](https://react-poster-and-router-6.web.app/)
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
