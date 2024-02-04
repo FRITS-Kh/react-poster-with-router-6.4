@@ -1,7 +1,7 @@
 import { PostItem } from '../components/Post';
 
 export const serverPath =
-  'https://us-central1-react-poster-and-router-6.cloudfunctions.net/app/';
+  'https://us-central1-react-poster-and-router-6.cloudfunctions.net/app';
 
 async function fetchData(
   url: string,
