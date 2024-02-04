@@ -1,6 +1,7 @@
 import { PostItem } from '../components/Post';
 
-export const serverPath = 'http://localhost:8080';
+export const serverPath =
+  'https://us-central1-react-poster-and-router-6.cloudfunctions.net/app/';
 
 async function fetchData(
   url: string,
