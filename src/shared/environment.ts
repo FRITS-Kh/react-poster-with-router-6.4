@@ -1,7 +1,9 @@
 import { PostItem } from '../components/Post';
 
-export const serverPath =
-  'https://us-central1-react-poster-and-router-6.cloudfunctions.net/app';
+const isDevMode = process.env.NODE_ENV === 'development';
+export const serverPath = isDevMode
+  ? 'http://127.0.0.1:5001/react-poster-and-router-6/us-central1/app'
+  : 'https://us-central1-react-poster-and-router-6.cloudfunctions.net/app';
 
 async function fetchData(
   url: string,

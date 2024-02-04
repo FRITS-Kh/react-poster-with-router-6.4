@@ -7,12 +7,12 @@ function MainHeader() {
   return (
     <header className={classes.header}>
       <h1 className={classes.logo}>
-        <MdMessage />
+        <MdMessage className={classes.icon} />
         React Poster
       </h1>
       <p>
         <Link to="/create-post" className={classes.button}>
-          <MdPostAdd size={18} />
+          <MdPostAdd className={classes.icon} />
           New Post
         </Link>
       </p>

@@ -1,19 +1,35 @@
 .header {
-  margin: 2rem 10%;
+  margin: 2rem 1rem;
   padding: 1rem;
   text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid #ece1fa;
+
+  @media (min-width: 600px) {
+    margin: 2rem 10%;
+  }
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: flex;
   gap: 1.5rem;
   align-items: center;
   color: #ece1fa;
+
+  @media (min-width: 600px) {
+    font-size: 2rem;
+  }
+
+  .icon {
+    display: none;
+
+    @media (min-width: 600px) {
+      display: block;
+    }
+  }
 }
 
 .button {
@@ -32,5 +48,9 @@
 
   &:hover {
     background-color: #8c6cf7;
+  }
+
+  .icon {
+    font-size: 1.2rem;
   }
 }
