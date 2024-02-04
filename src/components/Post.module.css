@@ -1,14 +1,21 @@
 .post {
-  padding: 1rem;
-  background-color: #9c7eee;
-  border-radius: 8px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   animation: animate-in 1s ease-out forwards;
   word-wrap: break-word;
 }
 
 .link {
+  display: block;
+  height: 100%;
+  padding: 1rem;
+  background: #e5d5f7;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   text-decoration: none;
+  transition: background 0.2s;
+
+  &:hover {
+    background: #fff;
+  }
 }
 
 .author {
